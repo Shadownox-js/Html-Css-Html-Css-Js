@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayacım</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="card">
+<h1>Sayacım</h1>
+<div class="count" id="counter">0</div>
+<div class="buttons">
+    <button id="decrease">Azalt</button>
+    <button id="reset">Sıfırla</button>
+    <button id="increase" class="primary">Arttır</button>
+</div>
+
+<div class="controls">
+<input type="number" id="step" value="1" min="1">
+<button id="setStep" type="button">Adımı Ayarla</button>  
+</div>
+<div class="small">
+Sayaç değeri tarayıcıda saklanır
+</div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
