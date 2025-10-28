@@ -1,0 +1,84 @@
+:root{
+  --bg: #0f172a;
+  --card: #0b1220;
+  --accent: #38bdf8;
+  --text: #e6eef8;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center; /*Dikeyde ortalar*/
+  justify-content: center; /*Yatayda ortalar*/
+  background:#142e39;
+  font-family: Inter, system-ui, Arial;
+  color: rgb(39, 57, 67)
+}
+.card{
+    background-color: rgb(129, 177, 211);
+    padding: 30px;
+    border-radius: 15px; /*Köşeleri yuvarlak yapıyoruz bunla*/
+    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    width: 400px;
+}
+h1 {
+  margin: 0 0 20px;
+  font-size: 30px;
+ 
+}
+.count {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 14px 0;
+  color: rgb(214, 202, 202);
+  
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 8px;
+}
+button {
+  background: transparent;
+  border: 2px solid rgba(113, 83, 83, 0.06);
+  padding: 10px 14px;
+  border-radius: 10px;
+  color:bisque;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+button:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.05);
+}
+button.primary {
+  background: linear-gradient(90deg, var(--accent), #318eff);
+  border: none;
+  color: #042033;
+}
+.small {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+input[type=number] {
+  width: 90px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: transparent;
+  color: var(--text);
+  text-align: center;
+}
